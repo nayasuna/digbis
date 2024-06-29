@@ -3,7 +3,7 @@ import featureImage from '../../public/ftr1.png'; // Adjust the path according t
 
 const FeatureSection = () => {
   return (
-    <section className="bg-white py-12">
+    <section className="bg-white py-12" id='features'>
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         {/* Left Side Content */}
         <div className="md:w-1/2 px-4">
