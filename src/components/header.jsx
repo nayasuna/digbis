@@ -1,20 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Pastikan Anda telah mengimpor Link dari react-router-dom
+import Logo from "../../public/logo1.png";
 
-const Header = () => {
+function Header() {
+  
   return (
-    <header className="bg-white py-4 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold text-orange-600">TransactEase</div>
-        <nav className="space-x-4">
-          <Link to="/" className="text-gray-600">Home</Link>
-          <Link to="/about" className="text-gray-600">About Us</Link>
-          <Link to="/features" className="text-gray-600">Features</Link>
-        </nav>
-        <button className="bg-orange-600 text-white py-2 px-4 rounded">Download Now</button>
+    <header className="py-4 text-white px-4 flex justify-between items-center" style={{ background: 'linear-gradient(90deg, #201616 0%, #CD934D 100%)' }}>
+      <div className="flex items-center">
+        <img src={Logo} alt="TransactEase Logo" className="w-22 h-16" />
       </div>
+      <nav>
+        <ul className="flex items-center space-x-32 mr-4">
+          <li><a href="#home" className="text-white hover:text-yellow-400">Home</a></li>
+          <li><a href="#about" className="text-white hover:text-yellow-400">About Us</a></li>
+          <li><a href="#blog" className="text-white hover:text-yellow-400">Blog</a></li>
+          <li><a href="#features" className="text-white hover:text-yellow-400">Features</a></li>
+          <li><a href="#contact" className="text-white hover:text-yellow-400">Contact</a></li>
+          <li><button className="bg-transparent rounded-3xl border border-white text-white px-4 py-2">Download Now</button></li>
+        </ul>
+      </nav>
     </header>
   );
-};
+}
 
 export default Header;

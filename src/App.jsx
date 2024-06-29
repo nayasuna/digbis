@@ -1,11 +1,10 @@
 import React from 'react';
-
-import HeroSection from './components/hero';
 import Footer from './components/footer';
-import AboutUs from './components/aboutus';
-import Features from './components/feature';
+import AboutSection from './components/aboutus';
+import FeaturesSection from './components/feature';
 import Testimonials from './components/testimonials';
-import Navbar from './components/Navbar';
+import Header from './components/header';
+import HomeSection from './components/hero';
 
 
 
@@ -13,11 +12,11 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <>
-      <Navbar />
-      <HeroSection />
-      <AboutUs />
-      <Features />
+      <Header />
+      <HomeSection/>
+      <AboutSection/> 
       <Testimonials />
+      <FeaturesSection />
       <Footer />
       
     </>

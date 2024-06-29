@@ -1,4 +1,3 @@
-// components/Testimonials.js
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
@@ -60,7 +59,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section id="testimonials" className="py-16 bg-gray-100">
+    <section id="blog" className="py-16 bg-white">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-12">What Our Users Said</h2>
         <Swiper
@@ -76,7 +75,7 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white shadow-lg p-6 rounded-lg flex flex-col items-center">
+              <div className="bg-white shadow-lg p-6 rounded-lg flex flex-col items-center transition duration-300 ease-in-out transform hover:scale-105">
                 <img
                   src={testimonial.img}
                   alt={`${testimonial.name} profile`}
