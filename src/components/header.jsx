@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../../public/logo1.png'; // Sesuaikan path sesuai struktur proyek Anda
+import HamburgerButton from '../components/HamburgerButton'; // Path ini disesuaikan dengan struktur proyek Anda
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,13 +12,13 @@ const Header = () => {
   return (
     <header className="py-4 text-white px-4 flex justify-between items-center" style={{ background: 'linear-gradient(90deg, #201616 0%, #CD934D 100%)' }}>
       {/* Logo */}
-      <div className="flex items-center">
-        <img src={Logo} alt="TransactEase Logo" className="w-22 h-16" />
+      <div className="flex items-center ml-4 md:ml-16">
+        <img src={Logo} alt="TransactEase Logo" className="w-24 md:w-28 h-auto" /> {/* Responsive logo size */}
       </div>
       
       {/* Desktop Menu */}
-      <nav className="hidden md:block">
-        <ul className="flex items-center space-x-8 lg:space-x-16">
+      <nav className="hidden md:flex md:items-center md:ml-4">
+        <ul className="flex items-center space-x-8 lg:space-x-20">
           <li><a href="#home" className="text-white hover:text-yellow-400">Home</a></li>
           <li><a href="#about" className="text-white hover:text-yellow-400">About Us</a></li>
           <li><a href="#blog" className="text-white hover:text-yellow-400">Blog</a></li>
@@ -29,16 +30,12 @@ const Header = () => {
 
       {/* Mobile Menu Button */}
       <div className="md:hidden">
-        <button onClick={toggleMobileMenu} className="focus:outline-none">
-          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
-          </svg>
-        </button>
+        <HamburgerButton isOpen={isMobileMenuOpen} onClick={toggleMobileMenu} />
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen ? (
-        <nav className="absolute top-16 left-0 w-full bg-transparent md:hidden">
+      {isMobileMenuOpen && (
+        <nav className="absolute top-16 left-0 w-full bg-black bg-opacity-75 md:hidden">
           <ul className="flex flex-col items-center space-y-4 py-4">
             <li><a href="#home" className="text-white hover:text-yellow-400">Home</a></li>
             <li><a href="#about" className="text-white hover:text-yellow-400">About Us</a></li>
@@ -48,10 +45,9 @@ const Header = () => {
             <li><button className="bg-transparent rounded-3xl border border-white text-white px-4 py-2">Download Now</button></li>
           </ul>
         </nav>
-      ) : null}
+      )}
     </header>
   );
-  
-}
+};
 
 export default Header;
