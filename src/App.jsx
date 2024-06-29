@@ -7,8 +7,6 @@ import Header from './components/header';
 import HomeSection from './components/hero';
 
 
-
-
 function App() {
   return (
     <>
