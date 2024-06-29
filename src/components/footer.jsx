@@ -4,9 +4,9 @@ import { faFacebook, faInstagram, faTwitter, faWhatsapp } from '@fortawesome/fre
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-12 px-12 items-center" id='contact' style={{ background: '#3C2A1F' }}>
-      <div className="container mx-auto flex justify-between px-8">
-        <div className="w-1/4 ml-8">
+    <footer className="bg-gray-800 text-white py-8 px-4 md:px-12" style={{ background: '#3C2A1F' }}>
+      <div className="container mx-auto flex flex-wrap justify-between">
+        <div className="w-full md:w-1/4 md:ml-8 mb-8 md:mb-0">
           <h2 className="font-bold text-xl">ABOUT US</h2>
           <p className="text-gray-300 mt-4">
             TransactEase adalah sebuah platform atau layanan yang dimaksudkan untuk memudahkan proses transaksi keuangan atau bisnis dari satu negara ke negara lain dengan cepat, mudah, dan tanpa batasan geografis yang signifikan.
@@ -19,17 +19,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="w-1/4 pl-10">
-          <h2 className="font-bold text-xl">HELP</h2>
-          <ul className="list-none mt-4">
-            <li className="mb-2"><a className="text-gray-300 hover:text-white" href="#">Customer Support</a></li>
-            <li className="mb-2"><a className="text-gray-300 hover:text-white" href="#">Terms & Condition</a></li>
-            <li className="mb-2"><a className="text-gray-300 hover:text-white" href="#">How It Works</a></li>
-            <li className="mb-2"><a className="text-gray-300 hover:text-white" href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
-        
-        <div className="w-1/4">
+        <div className="w-full md:w-1/4 md:pl-10 mb-8 md:mb-0">
           <h2 className="font-bold text-xl">COMPANY</h2>
           <ul className="list-none mt-4">
             <li><a href="#home" className="text-white hover:underline">Home</a></li>
@@ -40,7 +30,7 @@ const Footer = () => {
           </ul>
         </div>
         
-        <div className="w-1/4">
+        <div className="w-full md:w-1/4 mb-8 md:mb-0">
           <h2 className="font-bold text-xl">CONTACT US</h2>
           <ul className="list-none mt-4">
             <li className="mb-2 flex items-center">
@@ -48,7 +38,7 @@ const Footer = () => {
                 <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
                 <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
               </svg>
-              <a className="text-gray-300 hover:text-white" href="#"> Universitas Amikom Yogyakarta</a>
+              <a className="text-gray-300 hover:text-white" href="https://maps.app.goo.gl/eZs5iJXUG1i2ui3F6" target="_blank" rel="noopener noreferrer"> Universitas Amikom Yogyakarta</a>
             </li>
             
             <li className="mb-2 flex items-center">
