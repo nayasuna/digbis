@@ -30,7 +30,7 @@ function HomeSection() {
             <h1 className="text-4xl font-bold mb-4">Solusi Canggih Fintech untuk <br />Transaksi Internasional<br /> Tanpa Ribet </h1>
             <p className="text-lg mb-8">Dengan TransactEase hidup kamu akan menjadi lebih mudah</p>
             
-            <button className="bg-orange-400 rounded px-6 py-3 text-black hover:bg-yellow-500 block mx-auto md:mx-0">Download Now!</button>
+            <button className="bg-orange-400 rounded-md px-6 py-3 text-white hover:bg-orange-500 transition">Download Now!</button>
 
             <div className="statistics-grid mt-10 flex justify-center md:justify-start gap-12">
               <div className="stat-item flex flex-col items-center">
