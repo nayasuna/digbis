@@ -4,7 +4,7 @@ import { faFacebook, faInstagram, faTwitter, faWhatsapp } from '@fortawesome/fre
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8 px-4 md:px-12" style={{ background: '#3C2A1F' }}>
+    <footer className="bg-gray-800 text-white py-8 px-4 md:px-12" id='contact' style={{ background: '#3C2A1F' }}>
       <div className="container mx-auto flex flex-wrap justify-between">
         <div className="w-full md:w-1/4 md:ml-8 mb-8 md:mb-0">
           <h2 className="font-bold text-xl">ABOUT US</h2>
