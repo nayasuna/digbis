@@ -4,6 +4,7 @@ import { faFacebook, faInstagram, faTwitter, faWhatsapp } from '@fortawesome/fre
 
 const Footer = () => {
   const phoneNumber = '081224418965'; // Ganti dengan nomor WhatsApp Anda
+  const emailAddress = 'transactease09@gmail.com'; // Ganti dengan alamat email Anda
   
   return (
     <footer className="bg-gray-800 text-white py-8 px-4 md:px-12" style={{ background: '#3C2A1F' }}>
@@ -28,7 +29,7 @@ const Footer = () => {
             <li><a href="#about" className="text-white hover:underline">About Us</a></li>
             <li><a href="#blog" className="text-white hover:underline">Blog</a></li>
             <li><a href="#features" className="text-white hover:underline">Features</a></li>
-            <li><a href="#contact" className="text-white hover:underline">Contact</a></li>
+            <li><a href={`mailto:${emailAddress}`} className="text-white hover:underline">{emailAddress}</a></li>
           </ul>
         </div>
         
@@ -47,7 +48,7 @@ const Footer = () => {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope mr-2" viewBox="0 0 16 16">
                 <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
               </svg>
-              <a className="text-gray-300 hover:text-white" href="mailto:transactease09@gmail.com">transactease09@gmail.com</a>
+              <a className="text-gray-300 hover:text-white" href={`mailto:${emailAddress}`}>{emailAddress}</a>
             </li>
             
             <li className="mb-2 flex items-center">
