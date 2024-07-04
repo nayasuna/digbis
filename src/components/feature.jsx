@@ -1,17 +1,17 @@
 import React from 'react';
-import featureImage from '../../public/ftr1.png'; // Adjust the path according to your project structure
+import featureImage from '../../public/ftr1.png'; // Sesuaikan path sesuai struktur proyek Anda
 
 const FeatureSection = () => {
   return (
     <section className="bg-white py-12" id='features'>
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-0">
-        {/* Left Side Content */}
+        {/* Konten di Sisi Kiri */}
         <div className="md:w-1/2 flex flex-col justify-start mt-0 md:mt-0">
           <h3 className="text-base sm:text-lg font-semibold text-gray-600 mb-2">Our Feature</h3>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black mb-4">
             Providing International Transaction
           </h1>
-          <p className="text-sm sm:text-base text-gray-700 mb-6">
+          <p className="text-sm sm:text-base text-gray-700 mb-6" style={{ textJustify: 'justify' }}>
             Transaksi Internasional adalah fitur utama dari aplikasi Transactease. Transfer uang antar negara untuk pembayaran barang, jasa, atau investasi. Ini dapat dilakukan melalui aplikasi Transactease dengan berbagai metode pembayaran internasional, seperti transfer bank, kartu kredit, qris, dll. Pada Transactease terdapat fitur "Transaksi Internasional Berkelanjutan", Transactease akan secara otomatis menyesuaikan nilai tukar mata uang secara real-time saat melakukan transaksi. Ini akan mengurangi biaya konversi dan risiko fluktuasi nilai tukar yang tidak terduga.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 text-gray-600 mb-4">
@@ -27,7 +27,7 @@ const FeatureSection = () => {
           </div>
         </div>
         
-        {/* Right Side Image with Wider Rounded Background */}
+        {/* Gambar di Sisi Kanan dengan Background Bulat Lebar */}
         <div className="md:w-1/2 mt-10 md:mt-0 px-4 flex justify-center md:justify-end">
           <div className="relative w-full max-w-sm sm:max-w-md mx-auto md:max-w-none">
             <div

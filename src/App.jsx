@@ -6,6 +6,7 @@ import Testimonials from './components/testimonials';
 import Header from './components/header';
 import HomeSection from './components/hero';
 import ContactUsMenu from './components/contatus';
+import Faq from './components/faqs';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <AboutSection/> 
       <Testimonials />
       <FeaturesSection />
+      <Faq></Faq>
       <ContactUsMenu></ContactUsMenu>
       <Footer />
       

@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo2 from "../../public/logo2.png";
 
 function AboutSection() {
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleShowMore = () => {
+    setShowMore(!showMore);
+  };
+
   return (
     <section id="about" className="bg-white py-20 px-4 mt-[-30px] md:mt-0">
       <div className="container mx-auto">
@@ -11,18 +17,24 @@ function AboutSection() {
           </div>
           <div className="md:col-span-1">
             <h3 className="text-2xl font-bold mb-4 text-center md:text-left">About Us</h3>
-            <p className="text-lg mb-8 text-center md:text-left">
-              TransactEase merupakan sebuah platform atau layanan yang dikembangkan untuk memudahkan proses transaksi keuangan atau bisnis dari satu negara ke negara lain dengan cepat, mudah, dan tanpa batasan geografis yang signifikan.
+            <p className={`text-lg mb-8 text-center md:text-left ${showMore ? '' : 'line-clamp-3'}`} style={{ textJustify: 'justify' }}>
+              TransactEase merupakan sebuah platform atau layanan yang dikembangkan untuk memudahkan proses transaksi keuangan atau bisnis dari satu negara ke negara lain dengan cepat, mudah, dan tanpa batasan geografis yang signifikan. 
             </p>
-            <div className="flex items-center gap-6 text-gray-600 mb-4">
-            <button className="bg-orange-400 rounded-full px-6 py-3 text-white hover:bg-orange-500 transition">
-             Read More 
-            </button>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-telephone" viewBox="0 0 16 16">
-              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-            </svg>
-            <span className='text-gray-300'>123 456 789</span>
-          </div>
+            {!showMore && (
+              <button onClick={toggleShowMore} className="bg-orange-400 rounded-full px-6 py-3 text-white hover:bg-orange-500 transition">
+                Read More
+              </button>
+            )}
+            {showMore && (
+              <>
+                <p className="text-lg mb-8 text-center md:text-left">
+                TransactEase menyediakan berbagai metode pembayaran internasional, seperti transfer bank, kartu kredit, dan QRIS, dengan fitur unggulan "Transaksi Internasional Berkelanjutan" yang secara otomatis menyesuaikan nilai tukar mata uang secara real-time. Hal ini tidak hanya mengurangi biaya konversi, tetapi juga mengurangi risiko fluktuasi nilai tukar yang tidak terduga. TransactEase bertujuan untuk menyediakan solusi transaksi yang efisien dan aman bagi pengguna di seluruh dunia.
+                </p>
+                <button onClick={toggleShowMore} className="bg-orange-400 rounded-full px-6 py-3 text-white hover:bg-orange-500 transition">
+                  Read Less
+                </button>
+              </>
+            )}
           </div>
         </div>
       </div>
