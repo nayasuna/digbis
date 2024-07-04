@@ -5,6 +5,7 @@ import FeaturesSection from './components/feature';
 import Testimonials from './components/testimonials';
 import Header from './components/header';
 import HomeSection from './components/hero';
+import ContactUsMenu from './components/contatus';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <AboutSection/> 
       <Testimonials />
       <FeaturesSection />
+      <ContactUsMenu></ContactUsMenu>
       <Footer />
       
     </>
