@@ -19,7 +19,7 @@ const Header = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex md:items-center md:ml-4 ml-0"> {/* Menyesuaikan margin kiri di desktop */}
-          <ul className="flex items-center space-x-8 lg:space-x-20">
+          <ul className="flex items-center space-x-8 lg:space-x-20"> {/* Menyesuaikan space-x untuk item menu */}
             <li><a href="#home" className="text-white hover:text-yellow-400">Home</a></li>
             <li><a href="#about" className="text-white hover:text-yellow-400">About Us</a></li>
             <li><a href="#blog" className="text-white hover:text-yellow-400">Blog</a></li>
@@ -29,6 +29,7 @@ const Header = () => {
             <li><button className="bg-transparent rounded-3xl border border-white text-white px-4 py-2">Daftar</button></li>
           </ul>
         </nav>
+
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
@@ -48,8 +49,6 @@ const Header = () => {
             <li><a href="#blog" className="text-white hover:text-yellow-400">Blog</a></li>
             <li><a href="#features" className="text-white hover:text-yellow-400">Features</a></li>
             <li><a href="#contact" className="text-white hover:text-yellow-400">Contact</a></li>
-            <li><button className="bg-transparent rounded-3xl border border-white text-white px-4 py-2">Login</button></li>
-            <li><button className="bg-transparent rounded-3xl border border-white text-white px-4 py-2">Daftar</button></li>
           </ul>
         </nav>
       )}
