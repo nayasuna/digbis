@@ -28,7 +28,12 @@ function AboutSection() {
             {showMore && (
               <>
                 <p className="text-lg mb-8 text-center md:text-left">
-                TransactEase menyediakan berbagai metode pembayaran internasional, seperti transfer bank, kartu kredit, dan QRIS, dengan fitur unggulan "Transaksi Internasional Berkelanjutan" yang secara otomatis menyesuaikan nilai tukar mata uang secara real-time. Hal ini tidak hanya mengurangi biaya konversi, tetapi juga mengurangi risiko fluktuasi nilai tukar yang tidak terduga. TransactEase bertujuan untuk menyediakan solusi transaksi yang efisien dan aman bagi pengguna di seluruh dunia.
+                Dibangun dengan fokus pada keamanan dan keandalan, TransactEase menawarkan pengalaman transaksi yang aman dan efisien di 
+                seluruh dunia. Dengan akses mudah melalui platform digital, pengguna dapat mengelola transaksi mereka dengan lebih baik,
+                 meningkatkan efisiensi operasional, dan memperluas jangkauan bisnis global mereka tanpa terkendala oleh batasan geografis. 
+                 TransactEase tidak hanya menjadi mitra terpercaya dalam transaksi lintas batas, tetapi juga menjadi pilihan utama bagi individu, 
+                 bisnis kecil, hingga perusahaan besar yang mengutamakan kemudahan dan keamanan dalam setiap transaksi internasional yang mereka 
+                 lakukan.
                 </p>
                 <button onClick={toggleShowMore} className="bg-orange-400 rounded-full px-6 py-3 text-white hover:bg-orange-500 transition">
                   Read Less
