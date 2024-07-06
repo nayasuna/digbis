@@ -1,5 +1,5 @@
 import React from 'react';
-import featureImage from '../../public/ftr1.png'; // Sesuaikan path sesuai struktur proyek Anda
+import featureImage from '../../public/TF INTER.png'; // Sesuaikan path sesuai struktur proyek Anda
 
 const FeatureSection = () => {
   return (

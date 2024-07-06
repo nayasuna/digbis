@@ -29,7 +29,8 @@ const Footer = () => {
             <li><a href="#about" className="text-white hover:underline">About Us</a></li>
             <li><a href="#blog" className="text-white hover:underline">Blog</a></li>
             <li><a href="#features" className="text-white hover:underline">Features</a></li>
-            <li><a href={`mailto:${emailAddress}`} className="text-white hover:underline">{emailAddress}</a></li>
+            <li><a href="#faq" className="text-white hover:text-yellow-400">FAQs</a></li>
+            <li><a href="#contact" className="text-white hover:text-yellow-400">Contact</a></li>
           </ul>
         </div>
         
