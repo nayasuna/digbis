@@ -3,34 +3,24 @@ import React, { useState } from 'react';
 function Faq() {
   const faqs = [
     {
-      question: 'How do I get a virtual card?',
+      question: 'Apa TransactEase bisa digunakan seperti e-wallet pada umumnya?',
       answer:
-        'After sign in to the platform, click on cards from the navigation bar below and then proceed to create a virtual card. You can either create a Dollar card or a Naira card',
+        'Tentu saja! TransactEase menyediakan fitur yang sama seperti e-wallet seperti pada umumnya. Tetapi, TransactEase memiliki fitur tambahan lagi, yaitu bisa transfer ke luar negeri loh!',
     },
     {
-      question: 'How much do I get Charged for online transactions?',
+      question: 'Apakah TransactEase aman digunakan?',
       answer:
-        'After sign in to the platform, click on cards from the navigation bar below and then proceed to create a virtual card. You can either create a Dollar card or a Naira card',
+        'TransactEase sudah terdaftar di OJK dan diawasi langsung oleh Bank Indonesia. Jadi, jangan ragu lagi untuk melakukan transaksi di TransactEase ya!',
     },
     {
-      question: 'How much is the maintenance fee for your dollar cards?',
+      question: 'Bagaimana cara mendapatkan TransactEase?',
       answer:
-        'After sign in to the platform, click on cards from the navigation bar below and then proceed to create a virtual card. You can either create a Dollar card or a Naira card',
+        'Kamu bisa langsung mendapatkan TransactEase di PlayStore maupun AppleStore kamu. Kami tunggu ya!',
     },
     {
-      question: 'Do I get charged for withdrawals?',
+      question: 'Berapa biaya yang dibutuhkan untuk melakukan transfer luar negeri?',
       answer:
-        'After sign in to the platform, click on cards from the navigation bar below and then proceed to create a virtual card. You can either create a Dollar card or a Naira card',
-    },
-    {
-      question: 'Whats the maximum amount I can transfer to other banks?',
-      answer:
-        'After sign in to the platform, click on cards from the navigation bar below and then proceed to create a virtual card. You can either create a Dollar card or a Naira card',
-    },
-    {
-      question: "What happens if I don't redeem my QR Code reward?",
-      answer:
-        'After sign in to the platform, click on cards from the navigation bar below and then proceed to create a virtual card. You can either create a Dollar card or a Naira card',
+        'Kamu cukup menginputkan jumlah Rupiah nanti jumlah mata uang yang akan diterima penerima akan langsung ditampilkan. Tenang, biaya adminnya kecil!',
     },
   ];
 

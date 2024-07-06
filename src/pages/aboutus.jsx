@@ -13,10 +13,10 @@ function AboutSection() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex items-center justify-center md:justify-start mb-8 md:mb-0">
-            <img src={Logo2} alt="TransactEase Logo" className="w-60 h-60 md:w-72 md:h-72 ml-4 md:ml-24" />
+            <img src={Logo2} alt="TransactEase Logo" className="w-72 h-72 md:w-72 md:h-72 ml-19 md:ml-24" />
           </div>
           <div className="md:col-span-1">
-            <h3 className="text-2xl font-bold mb-4 text-center md:text-left">About Us</h3>
+            <h3 className="text-2xl font-bold mb-4 text-center md:text-left">Tentang Kami</h3>
             <p className={`text-lg mb-8 text-center md:text-left ${showMore ? '' : 'line-clamp-3'}`} style={{ textJustify: 'justify' }}>
               TransactEase merupakan sebuah platform atau layanan yang dikembangkan untuk memudahkan proses transaksi keuangan atau bisnis dari satu negara ke negara lain dengan cepat, mudah, dan tanpa batasan geografis yang signifikan. 
             </p>

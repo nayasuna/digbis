@@ -62,8 +62,8 @@ function Testimonial() {
   return (
     <div className="container mx-auto py-16 bg-gray-50" id='blog'>
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">GET TO KNOW OUR CLIENTS</h2>
-        <p className="text-gray-500">What our clients have to say about us</p>
+        <h2 className="text-4xl font-bold text-gray-800 mb-4">Apa Kata Pengguna TransactEase?</h2>
+        <p className="text-gray-500">Kepuasan pengguna adalah prioritas kami</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
