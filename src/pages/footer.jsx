@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram, faTiktok, faTwitter, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   const phoneNumber = '081224418965'; // Ganti dengan nomor WhatsApp Anda
@@ -15,9 +15,8 @@ const Footer = () => {
             TransactEase adalah sebuah platform atau layanan yang dimaksudkan untuk memudahkan proses transaksi keuangan atau bisnis dari satu negara ke negara lain dengan cepat, mudah, dan tanpa batasan geografis yang signifikan.
           </p>
           <div className="flex mt-4">
-            <a href="#" className="mr-4"><FontAwesomeIcon icon={faFacebook} className="text-gray-300 hover:text-white" /></a>
-            <a href="#" className="mr-4"><FontAwesomeIcon icon={faInstagram} className="text-gray-300 hover:text-white" /></a>
-            <a href="#" className="mr-4"><FontAwesomeIcon icon={faTwitter} className="text-gray-300 hover:text-white" /></a>
+            <a href="https://www.tiktok.com/@transactease3?_t=8o48f2Bd4dE&_r=1" className="mr-4"><FontAwesomeIcon icon={faTiktok} className="text-gray-300 hover:text-white" /></a>
+            <a href="https://www.instagram.com/transactease?igsh=cG81bHhoOGRleDcw" className="mr-4"><FontAwesomeIcon icon={faInstagram} className="text-gray-300 hover:text-white" /></a>
             <a href={`https://wa.me/${phoneNumber}`} className="mr-4"><FontAwesomeIcon icon={faWhatsapp} className="text-gray-300 hover:text-white" /></a>
           </div>
         </div>
